@@ -43,11 +43,10 @@ class MySmartPhone extends MyCellPhone implements wifi, Camera{
 }
 public class Default_Methods {
     public static void main(String[] args) {
-        MySmartPhone ms=new MySmartPhone();
-        String [] ar=ms.getNetwork();
-        for (String item:ar){
-            System.out.println(item);
-        }
-        ms.recordIn4k();
+        Camera ms = new MySmartPhone();
+        //ms.getNetwork(); not work because it in referance of camera not smartphone
+
+
     }
 }
+
