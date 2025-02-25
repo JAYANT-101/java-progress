@@ -20,7 +20,7 @@ public class NestedTryCatch {
                     System.out.println("out of bound");
                     System.out.println("Exception in level 2");
                 }
-            } catch (Exception e) {
+            } catch (IllegalArgumentException e) {
                 System.out.println("Exception in level one");
             }
             System.out.println("end");

@@ -23,7 +23,7 @@ public class ThrowAndThrows {
     }
     public static void main(String[] args) {
         try {
-            double ar=radius(6);
+            double ar=radius(8);
             int c = devide(9, 0);
             System.out.println(c);
         }
