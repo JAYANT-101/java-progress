@@ -1,7 +1,17 @@
 import java.util.Scanner;
+class exs extends Exception{
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
+    @Override
+    public String getMessage() {
+        return "the number is to big must be smaller then 700";
+    }
+}
 class cal{
-    public void math(){
+    public void math() throws exs{
         Scanner sc=new Scanner(System.in);
         boolean tp=true;
         while (tp){
@@ -18,8 +28,14 @@ class cal{
                     System.out.println("result " + (a + b));
                 case 2->
                     System.out.println("result " + (a - b));
-                case 3->
-                    System.out.println("result "+(a*b));
+                case 3 -> {
+                    if(a<700||b<700){
+                        throw new exs();
+                    }
+                    else {
+                        System.out.println("result " + (a * b));
+                    }
+                }
                 case 4->
                     System.out.println("result "+(a/b));
                 default->
@@ -37,6 +53,9 @@ public class calWithExce {
                 break;
             } catch (IllegalArgumentException | ArithmeticException e) {
                 System.out.println(e);
+            }
+            catch (exs e){
+                System.out.println(e.getMessage());
             }
         }
     }
