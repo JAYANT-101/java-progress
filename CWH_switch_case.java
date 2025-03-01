@@ -5,7 +5,7 @@ public class CWH_switch_case {
         System.out.println("Enter age");
         int a = sc.nextInt();
         switch (a) {
-            case 56 -> System.out.println("fuckinf old");
+            case 56 -> System.out.println("fucking old");
             case 46 -> System.out.println("somewhat old");
             case 26 -> System.out.println("fine");
             default -> System.out.println("have fun");
@@ -21,7 +21,7 @@ public class CWH_switch_case {
             System.out.println("fine");
         }
         else {
-            System.out.println("not exsepted");
+            System.out.println("not excepted");
         }
 
          */

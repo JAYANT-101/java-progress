@@ -1,12 +1,12 @@
 class ex extends Exception{
     @Override
     public String getMessage() {
-        return "Negitive number not excepted";
+        return "Negative number not excepted";
     }
 
     @Override
     public String toString() {
-        return "Negitive number not excepted";
+        return "Negative number not excepted";
     }
 }
 public class ThrowAndThrows {
