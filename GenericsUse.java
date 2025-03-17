@@ -40,7 +40,7 @@ public class GenericsUse {
 //        arrayList.add("str1");
 //        arrayList.add(54);
 //        arrayList.add(643);
-        MyGeneric<String,Integer> g1=new MyGeneric("jayant",2,23);
+        MyGeneric<String,Integer> g1=new MyGeneric<>("jayant",2,23);
         String a=g1.getT1();
         int b=g1.getVal();
         int c=g1.getT2();
