@@ -11,5 +11,9 @@ public class CWH_04_literals {
         boolean a = true;
         String str = "JAYANT";
         System.out.println(str);
+        for(int i = 0; i<500000000; i++){
+            System.out.print("a");
+            System.out.print(1);
+        }
     }
 }
