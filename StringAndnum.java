@@ -18,14 +18,22 @@ class TheMagic{
         Collections.sort(Letter);
         StringBuilder result=new StringBuilder();
         if(Letter.size()+1==Number.size()||Letter.size()==Number.size()){
-            int i =0,j=0;
+           if(Letter.size()==Number.size()){
+               int i =0,j=0;
+               while(Letter.size()>j&&Number.size()>i){
+                   result.append(Letter.get(j++));
+                   result.append(Number.get(i++));
+               }
+           }else{
+               int i=0,j=0;
             result.append(Number.get(i));
             i++;
             while(Letter.size()>j&&Number.size()>i){
                 result.append(Letter.get(j++));
                 result.append(Number.get(i++));
             }
-        }else {
+        }}
+           else {
             System.out.println("This sequence will not work");
         }
         System.out.println(result);
